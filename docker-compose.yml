@@ -1,0 +1,25 @@
+
+services:
+  unix-tooling:
+    build: .
+    image: unix-tooling-lecture:latest
+    container_name: unix-tooling-student
+
+    # Interactive terminal
+    stdin_open: true
+    tty: true
+
+    # Persistent work directory (mounted from host)
+    volumes:
+      - ./student-work:/home/student/EngInCS/work
+
+    # Network access for API calls
+    network_mode: bridge
+
+    # Restart policy
+    restart: unless-stopped
+
+    environment:
+      - TZ=Europe/Zurich
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8

@@ -1,0 +1,2 @@
+NASA_access_log_Jul95 filter=lfs diff=lfs merge=lfs -text
+OpenSSH_2k.log filter=lfs diff=lfs merge=lfs -text

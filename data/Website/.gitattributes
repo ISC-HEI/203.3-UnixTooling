@@ -1,0 +1,2 @@
+www.raclette-du-valais.ch filter=lfs diff=lfs merge=lfs -text
+www.raclette-du-valais.ch/** filter=lfs diff=lfs merge=lfs -text
